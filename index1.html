@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble hit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #container{
+            height: 720px;
+            width: 100%;
+            background-color: rgb(197, 184, 125);
+        }
+        .panel{
+            height:720px;
+        }
+        .ptop{
+            background-color: rgb(40, 89, 48);
+            padding: 0px 30%;
+            color:aquamarine;
+            display: flex;
+            justify-content: space-between;
+            height:40px;
+            width: auto;
+        }
+        .hello{
+            color: white;
+            cursor: pointer;
+            display: flex;
+            column-gap: 15px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height: 20px;
+            color: #221111;
+            padding:10px 20px;
+            border: 1px solid #ffff;
+            margin:5px 0px;
+            border-radius: 5px;
+            background-color: #ffff;
+            font-weight: 1000px;
+        }
+        #pbtm{
+            height: 100%;
+            width:auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .bubble{
+            height: 50px;
+            width:50px;
+            background-color: green;
+            font-weight: 600;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .bubble:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <div id="container">
+            <div class="panel">
+                <div class="ptop">
+                    <div class="hello 1"><h4>Hit</h4><div class="box" id="hit">5</div></div>
+                    <div class="hello 2"><h4>Timer</h4><div id="timervalue" class="box">60</div></div>
+                    <div class="hello 3"><h4>Score</h4><div class="box" id="score">0</div></div>
+                </div>
+                <div id="pbtm">
+                    <div class="bubble"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></Script>
+</body>
+</html>
